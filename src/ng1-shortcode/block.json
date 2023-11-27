@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ng1/shortcode",
+	"version": "0.1.0",
+	"title": "Ng1 Shortcode",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Affiche le contenu des shortcodes de votre site",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "ng1",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
