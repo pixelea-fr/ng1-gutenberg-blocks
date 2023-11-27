@@ -25,5 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function ng1_gutenberg_block_block_init() {
-	register_block_type( __DIR__ . '/ng1-shortcode/build' );
+	register_block_type( __DIR__ . '/build/ng1-shortcode' );
 }
+
+add_action( 'init', 'ng1_gutenberg_block_block_init' );

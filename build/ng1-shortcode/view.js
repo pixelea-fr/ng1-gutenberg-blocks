@@ -27,7 +27,6 @@ var __webpack_exports__ = {};
 
 /* eslint-disable no-console */
 console.log("Ng1 Shortcode Loaded");
-/* eslint-enable no-console */
 /******/ })()
 ;
 //# sourceMappingURL=view.js.map

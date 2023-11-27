@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "ng1/shortcode",
+	"name": "ng1/shortcode-v2",
 	"version": "0.1.0",
 	"title": "Ng1 Shortcode",
 	"category": "widgets",
@@ -15,5 +15,35 @@
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
-	"viewScript": "file:./view.js"
+	"viewScript": "file:./view.js",
+	"keywords": ["ng1","shortcode"],
+	"attributes":{
+		"shortcode":{
+			"type":"string",
+			"default":"[]"
+		},
+		"align": {
+			"type": "string",
+			"default": "none"
+		  },
+		  "textColor": {
+			"type": "string"
+		  },
+		  "backgroundColor": {
+			"type": "string"
+		  },
+		  "kaLink": {
+			"type": "string",
+			"default": ""
+		},
+		"linkLabel": {
+			"type": "string",
+			"default": "Check it out!"
+		},
+		"hasLinkNofollow": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"render" : "file:./view.php"
 }

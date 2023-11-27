@@ -1,9 +1,11 @@
 import { useBlockProps } from '@wordpress/block-editor';
 
-export default function save() {
-	return (
-		<p { ...useBlockProps.save() }>
-			{ 'Ng1 Gutenberg Block – hello from the saved content!' }
-		</p>
-	);
+export default function save({ attributes }) {
+  const { shortcode } = attributes;
+  const blockProps = useBlockProps.save(); 
+  return (
+    <div { ...blockProps }>
+      { shortcode }
+    </div>
+  );
 }

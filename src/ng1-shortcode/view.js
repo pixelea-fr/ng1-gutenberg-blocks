@@ -22,4 +22,3 @@
  
 /* eslint-disable no-console */
 console.log("Ng1 Shortcode Loaded");
-/* eslint-enable no-console */
